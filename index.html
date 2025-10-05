@@ -4,49 +4,112 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Vastraa — Premium Indian Textiles</title>
+<meta name="description" content="Vastraa: Premium Indian Textile Brand. Ethically made, modern designs, 100% Made in India.">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-  body {font-family: Arial, sans-serif; margin:0; background:#fff4e6; color:#333;}
-  header{background:#ff6f61; color:white; padding:20px; text-align:center;}
-  nav a{color:white; margin:0 15px; text-decoration:none; font-weight:bold;}
-  section{padding:40px 20px; max-width:900px; margin:auto;}
-  h1,h2{color:#b71c1c;}
-  .button{display:inline-block;padding:12px 20px;background:#b71c1c;color:white;border-radius:8px;text-decoration:none;margin-top:20px;}
-  footer{background:#333;color:white;text-align:center;padding:20px;margin-top:40px;}
+  /* Reset & typography */
+  * {margin:0; padding:0; box-sizing:border-box;}
+  body {font-family: 'Roboto', sans-serif; line-height:1.6; color:#333; background:#fff;}
+  a {text-decoration:none; color:inherit;}
+
+  /* Header */
+  header {background:#B71C1C; color:white; padding:20px 0; position:sticky; top:0; z-index:1000; box-shadow:0 2px 8px rgba(0,0,0,0.1);}
+  header .container {display:flex; justify-content:space-between; align-items:center; max-width:1200px; margin:auto; padding:0 20px;}
+  header h1 {font-weight:700; font-size:28px; letter-spacing:1px;}
+  nav a {margin-left:25px; font-weight:500; transition:0.3s; color:white;}
+  nav a:hover {opacity:0.8;}
+
+  /* Hero Section */
+  .hero {background:#FDEBD0; padding:100px 20px; text-align:center;}
+  .hero h2 {font-size:48px; color:#B71C1C; margin-bottom:20px;}
+  .hero p {font-size:20px; color:#444; max-width:700px; margin:0 auto 30px;}
+  .hero .btn {background:#B71C1C; color:white; padding:15px 30px; border-radius:8px; font-weight:500; transition:0.3s;}
+  .hero .btn:hover {opacity:0.9;}
+
+  /* Sections */
+  section {padding:80px 20px;}
+  .container {max-width:1200px; margin:auto;}
+  h2 {font-size:36px; color:#B71C1C; margin-bottom:30px; text-align:center;}
+  p {font-size:18px; color:#555; margin-bottom:20px; text-align:center;}
+  .grid {display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:40px; margin-top:40px;}
+  .card {background:white; padding:30px; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.05); text-align:center; transition:0.3s;}
+  .card:hover {transform:translateY(-5px); box-shadow:0 12px 25px rgba(0,0,0,0.1);}
+  .card h3 {font-size:22px; margin-bottom:10px; color:#B71C1C;}
+  .card p {font-size:16px; color:#666;}
+
+  /* Contact Section */
+  .contact p {text-align:center; font-size:18px; margin-bottom:10px;}
+  .contact a {color:#B71C1C; font-weight:500;}
+
+  /* Footer */
+  footer {background:#333; color:white; padding:30px 20px; text-align:center; margin-top:50px;}
+  footer span {font-weight:500;}
 </style>
 </head>
 <body>
+
+<!-- Header -->
 <header>
-  <h1>Vastraa</h1>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#products">Products</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <div class="container">
+    <h1>Vastraa</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
 </header>
 
+<!-- Hero Section -->
+<section class="hero">
+  <h2>Premium Indian Textiles</h2>
+  <p>Vastraa celebrates Indian craftsmanship with ethically made, modern, high-quality clothing. 100% Made in India.</p>
+  <a class="btn" href="#products">Explore Products</a>
+</section>
+
+<!-- About Section -->
 <section id="about">
-  <h2>About Vastraa</h2>
-  <p>Vastraa is a premium Indian textile brand celebrating traditional craftsmanship with modern designs. Ethically made, high-quality, and 100% Made in India.</p>
+  <div class="container">
+    <h2>About Vastraa</h2>
+    <p>We are a premium Indian textile brand combining traditional artistry with contemporary designs. Every piece reflects ethical production and the spirit of Made in India.</p>
+  </div>
 </section>
 
+<!-- Products Section -->
 <section id="products">
-  <h2>Our Products</h2>
-  <ul>
-    <li>Jeans</li>
-    <li>T-Shirts</li>
-    <li>Shirts</li>
-  </ul>
+  <div class="container">
+    <h2>Our Products</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Jeans</h3>
+        <p>Stylish, comfortable, and premium quality denim jeans.</p>
+      </div>
+      <div class="card">
+        <h3>T-Shirts</h3>
+        <p>Modern designs with soft, breathable Indian fabrics.</p>
+      </div>
+      <div class="card">
+        <h3>Shirts</h3>
+        <p>Ethically crafted shirts blending tradition and style.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
+<!-- Contact Section -->
 <section id="contact">
-  <h2>Contact Us</h2>
-  <p>Email: info@vastraa.com (replace with yours)</p>
-  <p>Phone: +91-XXXXXXXXXX</p>
+  <div class="container contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:info@vastraa.com">info@vastraa.com</a></p>
+    <p>Phone: +91-XXXXXXXXXX</p>
+  </div>
 </section>
 
+<!-- Footer -->
 <footer>
   © <span id="year"></span> Vastraa • Made with ❤️ in India
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </footer>
+
 </body>
 </html>
